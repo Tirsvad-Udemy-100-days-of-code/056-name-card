@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [59acff0] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — All mandatory criteria pass; ruff check, ruff format and mypy --strict ar
 
 [MIL-004]: ../../milestones/mil-004-portrait-and-background.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[59acff0]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/59acff0fb1e67dfd2ed60d63571036d34767bf5a
