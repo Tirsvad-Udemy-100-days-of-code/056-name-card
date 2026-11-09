@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [bc30ff3] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — All mandatory criteria pass; ruff and mypy were not run (not installed), 
 
 [MIL-001]: ../../milestones/mil-001-scaffold.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[bc30ff3]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/bc30ff3dafc610de459c02cf485e638e0d82a5af
