@@ -6,6 +6,6 @@ set -euo pipefail
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)"
 mkdir -p "$root/docs/screenshots"
 MSYS_NO_PATHCONV=1 docker run --rm \
-  -v "$root:/repo:ro" -v "$root/docs/screenshots:/out" \
-  mcr.microsoft.com/playwright/python:v1.54.0-noble \
-  bash -c "pip install --quiet --break-system-packages flask playwright==1.54.0 && python /repo/tools/screenshots/capture.py"
+	-v "$root:/repo:ro" -v "$root/docs/screenshots:/out" \
+	mcr.microsoft.com/playwright/python:v1.54.0-noble \
+	bash -c "pip install --quiet --break-system-packages flask playwright==1.54.0 && python /repo/tools/screenshots/capture.py"
