@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [29d7a1b] |
 
 ---
 
@@ -62,3 +62,4 @@ Go — All mandatory criteria pass; S01 accepted the plan in chat ('go'); tasks 
 
 [MIL-004]: ../../milestones/mil-004-portrait-and-background.md
 [QC-MIL-001]: ../../../framework/qc/artifacts/qc-milestones-gateways.md
+[29d7a1b]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/29d7a1b6c94f38f99dc9162eab32b3b29f9c3374
