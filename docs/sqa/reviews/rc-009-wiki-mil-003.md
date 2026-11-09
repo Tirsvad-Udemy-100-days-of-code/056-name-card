@@ -9,7 +9,8 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [e295ea1] |
+| 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [e295ea1] |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Criterion 14 checked on the published wiki; verdict Go | [d8eef66] |
 
 ---
 
@@ -39,22 +40,23 @@
 | 11 | Every page starts with the language line, with the current language in bold and a link to the same page in each other language | Pass | Every page starts with the language line with the current language in bold. |
 | 12 | A page in a language other than English is named `<Page>-<code>.md`, with a BCP 47 code; English has no suffix | Pass | Files are named Page-da.md and Page-ms.md; English has no suffix. |
 | 13 | Code blocks, commands, file names and IDs stay in English in every language | Pass | Code blocks, commands and file names are English in every language. |
-| 14 | The sidebar, every page and every link were checked on the published wiki after the change, not only in the repository | Pending | the published wiki can only be checked after the merge publishes it. |
+| 14 | The sidebar, every page and every link were checked on the published wiki after the change, not only in the repository | Pass | After the merge all 19 pages and the sidebar were published; every internal link resolved to a published page and every screenshot URL returned HTTP 200 (checked through the Gitea API on 2026-11-09). |
 | 15 | A change to the layout rules (sections, order, naming) is made in the generator or template and in this checklist's source rules together | N-A | no layout rule is changed. |
 | 16 | The wiki folder (`docs/wiki/`) is flat: every page, `Home.md` and `_Sidebar.md` included, is directly in it, and languages are told apart by file name, never by a subfolder | Pass | docs/wiki is flat; all 19 files are directly in it. |
 
 ## Overall Verdict
 
-Go-with-conditions — Every criterion passes in the repository; criterion 14 (check on the published wiki) can only be done after the merge, so it is Pending and the verdict is Go-with-conditions until the action item is closed.
+Go — every criterion passes; criterion 14 was checked on the published wiki after the merge.
 
 ## Action Items
 
 | Action | Owner | Due |
 | --- | --- | --- |
-| After the merge, check the sidebar and every page on the published wiki and set criterion 14 to Pass | S01 | 2026-11-10 |
+| None; the published wiki check is done | S01 | 2026-11-09 |
 
 ---
 
 [MIL-003]: ../../milestones/mil-003-documentation.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [e295ea1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/e295ea1eee5f22d5924606304e3438d348c8d5e1
+[d8eef66]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/d8eef667379d57dee57574b73fdd3bfe7184b4a6
