@@ -30,7 +30,7 @@ updated whenever an artifact instance is created or reviewed.
 | [MIL-001] | MIL | en | it | [PP-001] | - | RC-004, RC-007 (code) |
 | [MIL-002] | MIL | en | it | [PP-001], [MIL-001] | - | RC-005, RC-008 (code) |
 | [MIL-003] | MIL | en | it | [PP-001], [MIL-002] | - | RC-006, RC-009 (wiki) |
-| [MIL-004] | MIL | en | it | [PP-001], [MIL-003] | - | RC-010 |
+| [MIL-004] | MIL | en | it | [PP-001], [MIL-003] | - | RC-010, RC-011 (code) |
 
 ## Concern Coverage
 
