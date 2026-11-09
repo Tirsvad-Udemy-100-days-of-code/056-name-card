@@ -4,7 +4,7 @@
 | Key | Value |
 | --- | --- |
 | ID | PP-001 |
-| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003] |
+| CrossReference | [BC-001], [SA-001], [MIL-001], [MIL-002], [MIL-003], [MIL-004] |
 | Language | en |
 | Domain | it |
 
@@ -12,6 +12,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [9d708b8] |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Add MIL-004 portrait and background | pending |
 
 ---
 
@@ -33,6 +34,7 @@ This plan schedules the three gateways of the 056-name-card project: the project
 | Scaffold | [MIL-001] | 2026-11-09 to 2026-11-10 | 2026-11-10 | S01 | none (technical tasks) | Python project skeleton with configuration, tooling and passing smoke test | not yet synced |
 | Name card | [MIL-002] | 2026-11-10 to 2026-11-12 | 2026-11-12 | S01 | none (technical tasks) | Flask application serving the personalised Identity template at `/`, with tests | not yet synced |
 | Documentation | [MIL-003] | 2026-11-12 to 2026-11-14 | 2026-11-14 | S01 | none (technical tasks) | README, screenshots per lecture step, three-language wiki, repository description and topics | not yet synced |
+| Portrait and background | [MIL-004] | 2026-11-09 to 2026-11-10 | 2026-11-10 | S01 | none (technical tasks) | Centred portrait and a software development, AI and ML background, screenshot and docs updated | not yet synced |
 
 ```plantuml
 @startgantt
@@ -43,6 +45,8 @@ Project starts 2026-11-09
 [Name card Go/No-Go] happens 2026-11-12
 [Documentation] starts 2026-11-12 and ends 2026-11-14
 [Documentation Go/No-Go] happens 2026-11-14
+[Portrait and background] starts 2026-11-09 and ends 2026-11-10
+[Portrait and background Go/No-Go] happens 2026-11-10
 @endgantt
 ```
 
@@ -54,11 +58,12 @@ Project starts 2026-11-09
 | Identity template assets, personalised content and photo | [MIL-002] |
 | `src/`, `tests/`, `docs/`, `pyproject.toml`, `constants.py`, `.gitignore`, Doxyfile, README skeleton | [MIL-001] |
 | README and wiki screenshots per lecture step, wiki in en, da and ms | [MIL-003] |
+| Portrait fix and software development, AI and ML background (change request from S01) | [MIL-004] |
 
 ## Dependencies
 
 ```
-MIL-001 → MIL-002 → MIL-003
+MIL-001 → MIL-002 → MIL-003 → MIL-004
 ```
 
 A No-Go on a gateway stops the later gateways until the finding is fixed and the gateway is reviewed again; the end date then moves by the rework time. S01 decides a move of the end date.
@@ -82,4 +87,5 @@ A No-Go on a gateway stops the later gateways until the finding is fixed and the
 [MIL-001]: ./milestones/mil-001-scaffold.md
 [MIL-002]: ./milestones/mil-002-name-card.md
 [MIL-003]: ./milestones/mil-003-documentation.md
+[MIL-004]: ./milestones/mil-004-portrait-and-background.md
 [9d708b8]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/9d708b837307d80c2675f65cdaed97c31d0bd133
