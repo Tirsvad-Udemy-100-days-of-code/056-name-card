@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [009bdfa] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — All mandatory criteria pass; ruff check, ruff format and mypy --strict ar
 
 [MIL-002]: ../../milestones/mil-002-name-card.md
 [QC-PY-001]: ../../../framework/qc/code/qc-programming-python.md
+[009bdfa]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/009bdfae68150039d08cca7442a7a76bcf3e03f6
