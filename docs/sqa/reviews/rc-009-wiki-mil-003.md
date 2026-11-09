@@ -10,7 +10,7 @@
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
 | 2026-11-09 | Deprecated | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [e295ea1] |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Criterion 14 checked on the published wiki; verdict Go | pending |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Criterion 14 checked on the published wiki; verdict Go | [d8eef66] |
 
 ---
 
@@ -59,3 +59,4 @@ Go — every criterion passes; criterion 14 was checked on the published wiki af
 [MIL-003]: ../../milestones/mil-003-documentation.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
 [e295ea1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/e295ea1eee5f22d5924606304e3438d348c8d5e1
+[d8eef66]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/d8eef667379d57dee57574b73fdd3bfe7184b4a6
