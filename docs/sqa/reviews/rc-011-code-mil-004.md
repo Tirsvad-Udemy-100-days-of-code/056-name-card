@@ -28,7 +28,7 @@
 | --- | --- | --- | --- |
 | 1 | Packages, modules, functions, variables, classes and constants follow PEP 8 casing (`snake_case`, `PascalCase`, `UPPER_SNAKE`) | Pass | PEP 8 casing: build_svg, code_block, binary_rows, network; constants in upper case. |
 | 2 | Names state purpose in the domain's language; no unexplained abbreviations, no single-letter names outside tiny scopes | Pass | Names state purpose (binary_rows, code_block, network). |
-| 3 | Code is produced by the project's formatter and passes its linter with no unexplained suppressions | Pass | ruff check and ruff format --check pass on src, tests and tools with no suppressions; an unused noqa in tools/screenshots/capture.py was removed. |
+| 3 | Code is produced by the project's formatter and passes its linter with no unexplained suppressions | Pass | ruff check and ruff format --check pass on src, tests and tools with no suppressions; an unused noqa in tools/screenshots/capture.py was removed. OpenGrep blocked the `xml.sax.saxutils` import (use-defused-xml); a local `escape_text` replaces it, no suppression. |
 | 4 | Every function and method signature is type-annotated, including `-> None` | Pass | All functions are annotated, including -> None and -> int. |
 | 5 | No bare `except:`, no swallowed exceptions; specific exceptions are raised and the cause is kept (`raise ... from`) | Pass | No exception handling; none swallowed. |
 | 6 | No mutable default arguments and no shadowed builtins | Pass | No mutable defaults; the random generator is created per call from a fixed seed. |

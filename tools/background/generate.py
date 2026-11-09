@@ -13,7 +13,6 @@ from __future__ import annotations
 import itertools
 import random
 from pathlib import Path
-from xml.sax.saxutils import escape
 
 ## @brief Output file, relative to the repository root.
 OUTPUT = Path("src/name_card/presentation/static/images/bg.svg")
@@ -96,12 +95,18 @@ SVG_DEFS = (
 )
 
 
+def escape_text(text: str) -> str:
+    """Return text that is safe inside SVG element content."""
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+
 def code_block(x: int, y: int, size: int, opacity: float) -> str:
     """Return an SVG group with the code lines, one text row per line."""
     rows = []
     for n, (indent, tokens) in enumerate(CODE):
         spans = "".join(
-            f'<tspan fill="{colour}">{escape(text)}</tspan>' for colour, text in tokens
+            f'<tspan fill="{colour}">{escape_text(text)}</tspan>'
+            for colour, text in tokens
         )
         rows.append(
             f'<text x="{x + indent * size * 2}" y="{y + n * size * 1.7:.0f}" '
