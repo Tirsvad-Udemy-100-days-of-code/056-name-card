@@ -13,12 +13,11 @@ The four steps are:
 from __future__ import annotations
 
 import http.server
+import os
 import re
 import shutil
 import subprocess
-import sys
 import threading
-import time
 import urllib.request
 from pathlib import Path
 
@@ -82,15 +81,15 @@ def main() -> int:
     # The fixed-path server must resolve "static/..." relative to "/", i.e. /static/....
 
     # Step 4: the real application.
-    app = subprocess.Popen(
-        [sys.executable, "-m", "name_card"], cwd=REPO, env={"PYTHONPATH": str(REPO / "src"), "PATH": "/usr/bin:/bin:/usr/local/bin"}
-    )
+    os.environ["PYTHONPATH"] = str(REPO / "src")
+    app = subprocess.Popen(["python3", "-m", "name_card"], cwd=REPO)
+    pause = threading.Event()
     for _ in range(40):
         try:
             urllib.request.urlopen("http://127.0.0.1:5000/", timeout=1)
             break
         except OSError:
-            time.sleep(0.5)
+            pause.wait(0.5)
 
     shots = [
         ("step-1-template-download.png", "http://127.0.0.1:8101/index.html"),
