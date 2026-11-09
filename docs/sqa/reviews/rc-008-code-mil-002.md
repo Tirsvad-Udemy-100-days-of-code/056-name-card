@@ -47,7 +47,7 @@
 
 ## Overall Verdict
 
-Go — All mandatory criteria pass; ruff check, ruff format and mypy --strict are clean and 22 tests pass.
+Go — All mandatory criteria pass; ruff check, ruff format and mypy --strict are clean and 22 tests pass. The host OpenGrep scan flagged `home` as an unused inner function (false positive); it was fixed by returning the view from a module-level `make_home`, without suppression.
 
 ## Action Items
 
