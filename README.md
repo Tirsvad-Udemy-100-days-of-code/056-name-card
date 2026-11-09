@@ -17,12 +17,26 @@ A personal name card website served by a small Flask application, built from the
 
 The Flask application in `src/name_card/` renders one page at the root route (`/`). The folders follow the course assignment: `templates/` holds the HTML and `static/` holds the CSS, JavaScript, fonts and images. Constants live in `src/name_card/constants.py`, tests in `tests/` and project documents in `docs/`. Source comments use Doxygen syntax and `Doxyfile` builds the API documentation.
 
+### Lecture steps
+
+The wiki explains what each step taught, in [English][wiki], Danish and Bahasa Malaysia.
+
+| Step | What happens | Screenshot |
+| --- | --- | --- |
+| 1 | Download the Identity template; it works as plain files | ![Step 1](docs/screenshots/step-1-template-download.png) |
+| 2 | Flask serves `index.html` at `/`, but the asset paths are wrong | ![Step 2](docs/screenshots/step-2-flask-unfixed-paths.png) |
+| 3 | The paths point to `static/`; the template renders | ![Step 3](docs/screenshots/step-3-static-paths-fixed.png) |
+| 4 | The card is personalised: name, portrait, links, background | ![Step 4](docs/screenshots/step-4-personalised-card.png) |
+
+The screenshots are taken in a Docker container with a headless browser: `bash tools/screenshots/run.sh`. No window opens on the desktop.
+
 ## 📋 Requirements
 
 - Python 3.13 or newer, to run the application and the tests.
 - Flask, the only runtime dependency, to serve the page.
 - pytest, only to run the tests.
 - Doxygen, optional, only to build the API documentation.
+- Docker, optional, only to retake the screenshots.
 
 ## 🛠️ Setup
 
@@ -82,6 +96,7 @@ The documents a newcomer needs, in reading order.
 
 ---
 
+[wiki]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/wiki
 [license]: ./LICENSE
 [html5up]: https://html5up.net
 [repository]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card
