@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Proposed | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [e295ea1] |
 
 ---
 
@@ -57,3 +57,4 @@ Go-with-conditions — Every criterion passes in the repository; criterion 14 (c
 
 [MIL-003]: ../../milestones/mil-003-documentation.md
 [QC-WIKI-001]: ../../../framework/qc/artifacts/qc-wiki.md
+[e295ea1]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/e295ea1eee5f22d5924606304e3438d348c8d5e1
