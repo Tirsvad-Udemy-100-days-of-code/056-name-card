@@ -38,7 +38,7 @@ def serve(directory: Path, port: int, routes: dict[str, Path] | None = None) -> 
         def __init__(self, *args: object, **kwargs: object) -> None:
             super().__init__(*args, directory=str(directory), **kwargs)  # type: ignore[arg-type]
 
-        def do_GET(self) -> None:  # noqa: N802
+        def do_GET(self) -> None:
             path = self.path.split("?")[0]
             if path in routes:
                 body = routes[path].read_bytes()

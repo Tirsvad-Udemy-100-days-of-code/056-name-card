@@ -1,0 +1,14 @@
+/* Name card overrides on top of the unchanged HTML5 UP Identity stylesheet (main.css). */
+
+/* Background: software development, AI and machine learning (tools/background/generate.py). */
+body {
+	background-image: url("images/overlay.png"), -webkit-linear-gradient(60deg, rgba(255, 165, 150, 0.3) 5%, rgba(0, 228, 255, 0.2)), url("../../images/bg.svg");
+	background-image: url("images/overlay.png"), linear-gradient(60deg, rgba(255, 165, 150, 0.3) 5%, rgba(0, 228, 255, 0.2)), url("../../images/bg.svg");
+}
+
+/* Portrait: sized to fit the card, so it is centred on the line like in the template. */
+#main .avatar img {
+	width: 10em;
+	height: 10em;
+	object-fit: cover;
+}

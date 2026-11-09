@@ -26,9 +26,11 @@ The wiki explains what each step taught, in [English][wiki], Danish and Bahasa M
 | 1 | Download the Identity template; it works as plain files | ![Step 1](docs/screenshots/step-1-template-download.png) |
 | 2 | Flask serves `index.html` at `/`, but the asset paths are wrong | ![Step 2](docs/screenshots/step-2-flask-unfixed-paths.png) |
 | 3 | The paths point to `static/`; the template renders | ![Step 3](docs/screenshots/step-3-static-paths-fixed.png) |
-| 4 | The card is personalised: name, portrait, links, background | ![Step 4](docs/screenshots/step-4-personalised-card.png) |
+| 4 | The card is personalised: name, centred portrait, links, a software development, AI and machine learning background | ![Step 4](docs/screenshots/step-4-personalised-card.png) |
 
 The screenshots are taken in a Docker container with a headless browser: `bash tools/screenshots/run.sh`. No window opens on the desktop.
+
+The background is a generated SVG (code, a neural network and binary digits). Rebuild it with `python tools/background/generate.py`; the template stylesheet `main.css` stays unchanged and `card.css` holds the card's own rules.
 
 ## 📋 Requirements
 
