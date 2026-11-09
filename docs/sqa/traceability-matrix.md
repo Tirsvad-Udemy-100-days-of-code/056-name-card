@@ -9,7 +9,7 @@
 ## Version History
 | Date | Status | Author | Reviewer | Change | Commit |
 | --- | --- | --- | --- | --- | --- |
-| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | pending |
+| 2026-11-09 | Accepted | Jens Tirsvad Nielsen | S01 (AI as stand-in) | Initial version | [9d708b8] |
 
 ---
 
@@ -59,3 +59,4 @@ No view artifacts (use cases, domain model, architecture description) exist: the
 [MIL-001]: ../milestones/mil-001-scaffold.md
 [MIL-002]: ../milestones/mil-002-name-card.md
 [MIL-003]: ../milestones/mil-003-documentation.md
+[9d708b8]: https://git.tirsystem.com/Tirsvad-Udemy-100-days-of-code/056-name-card/commit/9d708b837307d80c2675f65cdaed97c31d0bd133
